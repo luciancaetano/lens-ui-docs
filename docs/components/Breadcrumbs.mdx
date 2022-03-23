@@ -1,0 +1,62 @@
+import { Badge, LensProvider, Breadcrumbs } from 'lens-ui';
+
+Breadcrumbs allow users to make selections from a range of pages or navigation history.
+
+---
+<LensProvider>
+  <Breadcrumbs
+    history={[
+      {
+        title: 'Home'
+      },
+      {
+        title: 'Profile'
+      },
+      {
+        title: 'Settings'
+      }
+    ]}
+  >
+  </Breadcrumbs>
+</LensProvider>
+
+---
+
+#### Interface IBreadcrumbLink
+| Property | Type | Default Value | Description | Required |
+| --- | --- | --- | --- |
+| title | React.ReactNode | The text to display for the link | Yes |
+| url | string | The URL to navigate to when the link is clicked | No |
+|testingID| string |The id used for testing purposes Eg:<br/><br/> `<div data-testid="my-test-id"/>` | No |
+
+### Properties
+
+| Property | Type | Default Value | Description | Required |
+|---|---|---|---|---|
+|type|solid \| subtle \| outlined|**primary**|The type of the breadcrumb.|No|
+|history|IBreadcrumbLink[]|-|The history of the breadcrumb.|Yes|
+|onItemClick|<p style={{minWidth: "300px"}}>``function(IBreadcrumbLink, MouseEvent)``</p>|-|The function to call when an item is clicked.|No|
+|testingID| string | - | The id used for testing purposes Eg:<br/>`<div data-testid="my-test-id"/>` |No|
+
+### Playground
+
+```tsx live
+<LensProvider>
+  <Breadcrumbs
+    history={[
+      {
+        title: 'Home'
+      },
+      {
+        title: 'Profile'
+      },
+      {
+        title: 'Settings'
+      }
+    ]}
+    onItemClick={function noRefCheck(){}}
+  >
+    Hello World
+  </Breadcrumbs>
+</LensProvider>
+```
