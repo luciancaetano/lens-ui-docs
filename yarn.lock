@@ -7271,10 +7271,10 @@ latest-version@^5.1.0:
   dependencies:
     package-json "^6.3.0"
 
-lens-ui@4.7.15-3:
-  version "4.7.15-3"
-  resolved "https://registry.yarnpkg.com/lens-ui/-/lens-ui-4.7.15-3.tgz#f5d4f8f398877f43090cac025e74567e6bdb71c3"
-  integrity sha512-KrAQQkAypQXWWV/v4Z6/ppTbfIYEFGubNKqB1+Q4cuOWjR9D+ZAii8cPcG3ubRmme7VacT7+KKz8e/ciABQqvg==
+lens-ui@4.7.15-5:
+  version "4.7.15-5"
+  resolved "https://registry.yarnpkg.com/lens-ui/-/lens-ui-4.7.15-5.tgz#05b7a7da14278b56764a083f5706c7773119432c"
+  integrity sha512-q7ssKWQ89ep4UPuPsNUM+4yzAtz5hB/gOE9NFosLwfEIqGNduu8PcSO4COwnZLMA0ZhC/PV3u9/kQT0O90ulsw==
   dependencies:
     "@floating-ui/dom" "^0.4.1"
     "@floating-ui/react-dom" "^0.6.0"
@@ -7292,6 +7292,7 @@ lens-ui@4.7.15-3:
     react-select "^5.2.2"
     react-spring "^9.4.4"
     react-tooltip "^4.2.21"
+    regenerator-runtime "^0.13.9"
     reset-css "^5.0.1"
     sweetalert2 "^11.4.4"
     use-debounce "^7.0.1"
@@ -9374,7 +9375,7 @@ regenerator-runtime@^0.11.0:
   resolved "https://registry.yarnpkg.com/regenerator-runtime/-/regenerator-runtime-0.11.1.tgz#be05ad7f9bf7d22e056f9726cee5017fbf19e2e9"
   integrity sha512-MguG95oij0fC3QV3URf4V2SDYGJhJnJGqvIIgdECeODCT98wSWDAJ94SSuVpYQUoTcGUIL6L4yNB7j1DFFHSBg==
 
-regenerator-runtime@^0.13.4:
+regenerator-runtime@^0.13.4, regenerator-runtime@^0.13.9:
   version "0.13.9"
   resolved "https://registry.yarnpkg.com/regenerator-runtime/-/regenerator-runtime-0.13.9.tgz#8925742a98ffd90814988d7566ad30ca3b263b52"
   integrity sha512-p3VT+cOEgxFsRRA9X4lkI1E+k2/CtnKtU4gcxyaCUreilL/vqI6CdZ3wxVUx3UOUg+gnUOQQcRI7BmSI656MYA==

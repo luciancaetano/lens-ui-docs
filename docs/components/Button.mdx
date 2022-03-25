@@ -1,0 +1,118 @@
+import { Button, LensProvider } from 'lens-ui';
+
+This is a small emblem commonly used to represent tags.
+
+---
+
+<LensProvider>
+    <Button
+      intent="primary"
+      onBlur={function noRefCheck(){}}
+      onClick={function noRefCheck(){}}
+      onDoubleClick={function noRefCheck(){}}
+      onFocus={function noRefCheck(){}}
+    >
+      primary
+    </Button>
+    &nbsp;
+    <Button
+      intent="secondary"
+      onBlur={function noRefCheck(){}}
+      onClick={function noRefCheck(){}}
+      onDoubleClick={function noRefCheck(){}}
+      onFocus={function noRefCheck(){}}
+    >
+      secondary
+    </Button>
+    &nbsp;
+    <Button
+      intent="success"
+      onBlur={function noRefCheck(){}}
+      onClick={function noRefCheck(){}}
+      onDoubleClick={function noRefCheck(){}}
+      onFocus={function noRefCheck(){}}
+    >
+      success
+    </Button>
+    &nbsp;
+    <Button
+      intent="info"
+      onBlur={function noRefCheck(){}}
+      onClick={function noRefCheck(){}}
+      onDoubleClick={function noRefCheck(){}}
+      onFocus={function noRefCheck(){}}
+    >
+      info
+    </Button>
+    &nbsp;
+    <Button
+      intent="warning"
+      onBlur={function noRefCheck(){}}
+      onClick={function noRefCheck(){}}
+      onDoubleClick={function noRefCheck(){}}
+      onFocus={function noRefCheck(){}}
+    >
+      warning
+    </Button>
+    &nbsp;
+    <Button
+      intent="danger"
+      onBlur={function noRefCheck(){}}
+      onClick={function noRefCheck(){}}
+      onDoubleClick={function noRefCheck(){}}
+      onFocus={function noRefCheck(){}}
+    >
+      danger
+    </Button>
+    &nbsp;
+    <Button
+      intent="dark"
+      onBlur={function noRefCheck(){}}
+      onClick={function noRefCheck(){}}
+      onDoubleClick={function noRefCheck(){}}
+      onFocus={function noRefCheck(){}}
+    >
+      dark
+    </Button>
+    &nbsp;
+    <Button
+      intent="light"
+      onBlur={function noRefCheck(){}}
+      onClick={function noRefCheck(){}}
+      onDoubleClick={function noRefCheck(){}}
+      onFocus={function noRefCheck(){}}
+    >
+      light
+    </Button>
+</LensProvider>
+
+---
+
+### Properties
+The button properties extends the [HTML button element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/button).
+
+|Property|Type|Default Value|Description|Required|
+|---|---|---|---|---|
+|type|`button`, `submit`, `reset`|'button'|The type of button.|No|
+|intent|`primary`, `secondary`, `success`, <br/>`info`, `warning`, `danger`|primary | The intent of the badge.|No|
+|disabled|boolean|false|Whether the button is disabled.|No|
+|active|boolean|false|Whether the button is active.|No|
+|size|`normal`, `small`, `large`|'normal'|The size of the button.|No|
+|appearance|`outlined`, `default`, `minimal`|'default'|The appearance of the button.|No|
+|onClick|function|undefined|The function to call when the button is clicked.|No|
+|onBlur|function|undefined|The function to call when the button loses focus.|No|
+|onDoubleClick|function|undefined|The function to call when the button is double clicked.|No|
+|onFocus|function|undefined|The function to call when the button gains focus.|No|
+|testingID| string | undefined | The id used for testing purposes.<br/>`<div data-testid="my-test-id"/>` |No|
+
+### Playground
+
+```tsx live
+<LensProvider>
+    <Button
+        intent="primary"
+    >
+        Hello World
+    </Button>
+</LensProvider>
+```
