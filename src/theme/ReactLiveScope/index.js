@@ -5,7 +5,7 @@ import "regenerator-runtime/runtime.js";
 const ReactLiveScope = {
   React,
   ...React,
-  ...LensUI,
+  ...(ExecutionEnvironment.canUseDOM ? LensUI : {}),
 };
 
 export default ReactLiveScope;

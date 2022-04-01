@@ -1,17 +1,14 @@
 import { FormGroup, TextInput, LensProvider } from 'lens-ui';
-import BrowserOnly from '@docusaurus/BrowserOnly';
 
 The FormGroup component can be used handle a form control and offer additional functionality as label, help text, and validation.
 
 
 ---
-<BrowserOnly>
 <LensProvider>
     <FormGroup label="Name" required helperText="Please enter your name" helperTextIntent="warning">
         <TextInput type="text" name="name" />
     </FormGroup>
 </LensProvider>
-</BrowserOnly>
 ---
 
 ### Properties

@@ -2,9 +2,7 @@
 title: Material Design icons
 ---
 import { Icon, LensProvider, Card, IconsNameEnum, Layout, InputText } from 'lens-ui';
-import BrowserOnly from '@docusaurus/BrowserOnly';
 
-<BrowserOnly>
 <LensProvider>
     <Layout.Content layout="horizontal" style={{padding: "1rem", flexWrap: 'wrap', alignItems: 'center', justifyContent: 'center'}}>
         {IconsNameEnum.filter(t => t.startsWith('Md')).map(t => (

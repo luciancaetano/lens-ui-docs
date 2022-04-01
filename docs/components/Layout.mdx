@@ -1,5 +1,4 @@
 import { Layout, LensProvider } from 'lens-ui';
-import BrowserOnly from '@docusaurus/BrowserOnly';
 
 The Layout component's handles application layout.
 
@@ -28,7 +27,6 @@ The properties of Layout.AppLayout extends the `<aside>` element.
 ### Basic layout
 
 ```tsx
-<BrowserOnly>
   <LensProvider>
       <Layout.AppLayout>
         <div>
@@ -42,13 +40,11 @@ The properties of Layout.AppLayout extends the `<aside>` element.
         </div>
       </Layout.AppLayout>
   </LensProvider>
-</BrowserOnly>
 ```
 
 ### Layout wit sidebar
 
 ```tsx
-<BrowserOnly>
   <LensProvider>
       <Layout.AppLayout>
       <div>
@@ -67,5 +63,4 @@ The properties of Layout.AppLayout extends the `<aside>` element.
       </div>
       </Layout.AppLayout>
   </LensProvider>
-</BrowserOnly>
 ```

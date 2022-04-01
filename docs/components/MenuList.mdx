@@ -1,5 +1,4 @@
 import { MenuList, LensProvider } from 'lens-ui';
-import BrowserOnly from '@docusaurus/BrowserOnly';
 
 A MenuList is a list of items that can be selected.
 
@@ -57,7 +56,6 @@ A MenuList is a list of items that can be selected.
 ## Playground
 
 ```tsx live
-<BrowserOnly>
   <LensProvider>
     <MenuList
       activeIndex={-1}
@@ -82,5 +80,4 @@ A MenuList is a list of items that can be selected.
       onItemClick={() => {}}
     />
   </LensProvider>
-</BrowserOnly>
 ```
