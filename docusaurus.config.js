@@ -15,6 +15,7 @@ const config = {
   favicon: 'img/favicon.ico',
   organizationName: 'luciancaetano', // Usually your GitHub org/user name.
   projectName: 'lens-ui', // Usually your repo name.
+  deploymentBranch: 'https://github.com/luciancaetano/lens-ui',
   themes: ['@docusaurus/theme-live-codeblock'],
 
   presets: [
