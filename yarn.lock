@@ -1658,10 +1658,17 @@
   resolved "https://registry.yarnpkg.com/@floating-ui/core/-/core-0.6.1.tgz#aed861a1b6dbebadf14a9dd829ba67f4f3ae795c"
   integrity sha512-Y30eVMcZva8o84c0HcXAtDO4BEzPJMvF6+B7x7urL2xbAqVsGJhojOyHLaoQHQYjb6OkqRq5kO+zeySycQwKqg==
 
-"@floating-ui/dom@^0.4.0", "@floating-ui/dom@^0.4.1":
+"@floating-ui/dom@^0.4.0":
   version "0.4.1"
   resolved "https://registry.yarnpkg.com/@floating-ui/dom/-/dom-0.4.1.tgz#3e164482d7f036527f65a794bdf054d2cc44fcbf"
   integrity sha512-VAdIkn+zc4VB3pSemBk2JwjXlbVEBUbQft4V5jGpUeA9Vxd1fQD5eL3dMIMLVW003NYCOoW42JjjyBPNTpr8uQ==
+  dependencies:
+    "@floating-ui/core" "^0.6.1"
+
+"@floating-ui/dom@^0.4.2":
+  version "0.4.2"
+  resolved "https://registry.yarnpkg.com/@floating-ui/dom/-/dom-0.4.2.tgz#5c34a19f23a0d72af564e45e5af8000b45318e60"
+  integrity sha512-2/4vOhMAujkMmGqGX1Gut84phe5MNfk1kGeM+RSTJCpeR0SWR2/RR+/f1r1msOvTQa28wn7HEhxGe71CjYY/vw==
   dependencies:
     "@floating-ui/core" "^0.6.1"
 
@@ -1673,12 +1680,12 @@
     "@floating-ui/dom" "^0.4.0"
     use-isomorphic-layout-effect "^1.1.1"
 
-"@fontsource/roboto@^4.5.3":
-  version "4.5.3"
-  resolved "https://registry.yarnpkg.com/@fontsource/roboto/-/roboto-4.5.3.tgz#c729ac22c35ae1c224cde10042ce7ab356bc4dda"
-  integrity sha512-NUvBTj332dFRdiVkLlavXbDGoD2zyyeGYmMyrXOnctg/3e4pq95+rJgNfUP+k4v8UBk2L1aomGw9dDjbRdAmTg==
+"@fontsource/roboto@^4.5.5":
+  version "4.5.5"
+  resolved "https://registry.yarnpkg.com/@fontsource/roboto/-/roboto-4.5.5.tgz#4ecc38e690469378e2ec2a97f9c12282c654cc93"
+  integrity sha512-Pe1p+gAO6K0aLxBXlLoJRHVx352tVc/v/7DOnvM3t+FYXb+KUga9aCD1NpnDfd0kKnWXqrZyAXguyyFWDDuphw==
 
-"@fortawesome/fontawesome-free@^6.0.0":
+"@fortawesome/fontawesome-free@^6.1.1":
   version "6.1.1"
   resolved "https://registry.yarnpkg.com/@fortawesome/fontawesome-free/-/fontawesome-free-6.1.1.tgz#bf5d45611ab74890be386712a0e5d998c65ee2a1"
   integrity sha512-J/3yg2AIXc9wznaVqpHVX3Wa5jwKovVF0AMYSnbmcXTiL3PpRPfF58pzWucCwEiCJBp+hCNRLWClTomD8SseKg==
@@ -4695,6 +4702,11 @@ date-fns@^2.28.0:
   resolved "https://registry.yarnpkg.com/date-fns/-/date-fns-2.28.0.tgz#9570d656f5fc13143e50c975a3b6bbeb46cd08b2"
   integrity sha512-8d35hViGYx/QH0icHYCeLmsLmMUheMmTyV9Fcm6gvNwdw31yXXH+O85sOBJ+OLnLQMKZowvpKb6FgMIQjcpvQw==
 
+dayjs@^1.11.0:
+  version "1.11.0"
+  resolved "https://registry.yarnpkg.com/dayjs/-/dayjs-1.11.0.tgz#009bf7ef2e2ea2d5db2e6583d2d39a4b5061e805"
+  integrity sha512-JLC809s6Y948/FuCZPm5IX8rRhQwOiyMb2TfVVQEixG7P8Lm/gt5S7yoQZmC8x1UehI9Pb7sksEt4xx14m+7Ug==
+
 debug@2.6.9, debug@^2.2.0, debug@^2.3.3, debug@^2.6.0, debug@^2.6.8, debug@^2.6.9:
   version "2.6.9"
   resolved "https://registry.yarnpkg.com/debug/-/debug-2.6.9.tgz#5d128515df134ff327e90a4c93f4e077a536341f"
@@ -7271,21 +7283,24 @@ latest-version@^5.1.0:
   dependencies:
     package-json "^6.3.0"
 
-lens-ui@4.7.15-5:
-  version "4.7.15-5"
-  resolved "https://registry.yarnpkg.com/lens-ui/-/lens-ui-4.7.15-5.tgz#05b7a7da14278b56764a083f5706c7773119432c"
-  integrity sha512-q7ssKWQ89ep4UPuPsNUM+4yzAtz5hB/gOE9NFosLwfEIqGNduu8PcSO4COwnZLMA0ZhC/PV3u9/kQT0O90ulsw==
+lens-ui@4.8.0-36:
+  version "4.8.0-36"
+  resolved "https://registry.yarnpkg.com/lens-ui/-/lens-ui-4.8.0-36.tgz#220adccd043989b48bcbddea88398dc93de52945"
+  integrity sha512-QiauKSGQMx3ct7+hcC5c9SFbucS7DuEet+tf8XSezjRFQNNOUp8JR1CrFsTsje0imtEA4N3n3DswxLw4k4pzow==
   dependencies:
-    "@floating-ui/dom" "^0.4.1"
+    "@floating-ui/core" "^0.6.1"
+    "@floating-ui/dom" "^0.4.2"
     "@floating-ui/react-dom" "^0.6.0"
-    "@fontsource/roboto" "^4.5.3"
-    "@fortawesome/fontawesome-free" "^6.0.0"
+    "@fontsource/roboto" "^4.5.5"
+    "@fortawesome/fontawesome-free" "^6.1.1"
     "@wojtekmaj/react-daterange-picker" "^3.4.0"
     clsx "^1.1.1"
     date-fns "^2.28.0"
+    dayjs "^1.11.0"
     lodash "^4.17.21"
     react-currency-input "^1.3.6"
-    react-hook-form "^7.27.1"
+    react-element-popper "^2.1.6"
+    react-hook-form "^7.28.1"
     react-icons "^4.3.1"
     react-input-mask "^2.0.4"
     react-multi-date-picker "^3.3.0"
@@ -7294,7 +7309,7 @@ lens-ui@4.7.15-5:
     react-tooltip "^4.2.21"
     regenerator-runtime "^0.13.9"
     reset-css "^5.0.1"
-    sweetalert2 "^11.4.4"
+    sweetalert2 "^11.4.7"
     use-debounce "^7.0.1"
 
 leven@^3.1.0:
@@ -9103,7 +9118,7 @@ react-helmet-async@*, react-helmet-async@^1.2.3:
     react-fast-compare "^3.2.0"
     shallowequal "^1.1.0"
 
-react-hook-form@^7.27.1:
+react-hook-form@^7.28.1:
   version "7.28.1"
   resolved "https://registry.yarnpkg.com/react-hook-form/-/react-hook-form-7.28.1.tgz#95fc37be6c6b9d57212eb7eca055fb36d079b3b7"
   integrity sha512-mgwxvXuvt3FMY/mdnWbPc++Zf1U5xYzkhOaL05mtFMLvXc9MvUhMUlKtUVuO12sOrgT3nPXBgVFawtiJ4ONrgg==
@@ -10518,10 +10533,10 @@ svgo@^2.5.0, svgo@^2.7.0:
     picocolors "^1.0.0"
     stable "^0.1.8"
 
-sweetalert2@^11.4.4:
-  version "11.4.6"
-  resolved "https://registry.yarnpkg.com/sweetalert2/-/sweetalert2-11.4.6.tgz#c17ae901150c8a89ea85b93cefe5c4791f32e68a"
-  integrity sha512-7UDJV8etrJQ6vJGh88k7D63qBKtwEl8JV7zIxmO2Frp8ZGQDgQQC6f9ivqiVwLRxoEyfxsn/v3T6Zykk7/vlEg==
+sweetalert2@^11.4.7:
+  version "11.4.8"
+  resolved "https://registry.yarnpkg.com/sweetalert2/-/sweetalert2-11.4.8.tgz#f436eb34107c5637a0278fa7330edc722090ebbb"
+  integrity sha512-BDS/+E8RwaekGSxCPUbPnsRAyQ439gtXkTF/s98vY2l9DaVEOMjGj1FaQSorfGREKsbbxGSP7UXboibL5vgTMA==
 
 symbol-tree@^3.2.1:
   version "3.2.4"

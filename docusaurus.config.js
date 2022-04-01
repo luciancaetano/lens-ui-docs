@@ -30,7 +30,7 @@ const config = {
         },
         blog: false,
         theme: {
-          customCss: [require.resolve('./node_modules/lens-ui/build/index.css'), require.resolve('./src/styles.css')],
+          customCss: [require.resolve('./node_modules/lens-ui/dist/index.css'), require.resolve('./src/styles.css')],
         },
       }),
     ],

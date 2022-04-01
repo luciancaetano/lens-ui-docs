@@ -21,7 +21,7 @@
     "@mdx-js/react": "^1.6.22",
     "clsx": "^1.1.1",
     "docusaurus-plugin-react-docgen-typescript": "^0.1.0",
-    "lens-ui": "4.7.15-5",
+    "lens-ui": "4.8.0-36",
     "prism-react-renderer": "^1.2.1",
     "react": "^17.0.1",
     "react-docgen-typescript": "^2.2.2",

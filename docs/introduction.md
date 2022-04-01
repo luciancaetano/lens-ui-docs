@@ -4,7 +4,7 @@ slug: /
 title: Getting Started
 ---
 
-Lens-ui is a fork of a personal design system that I've been working on for some time.
+Lens-ui is a basic design system focused on stability and simplicity.
 
 ### Installation
 
@@ -19,7 +19,7 @@ To install just run:
 `yarn add lens-ui`
 
 ### Configuration
-Lens-ui uses contexts from LensProvider and css file, just import `lens-ui/build/index.css` ,  `lens-ui/build/reset.css` and declare `LensProvider` on app root.
+Lens-ui uses contexts from LensProvider and css file, just import `lens-ui/dist/index.css` ,  `lens-ui/dist/reset.css` and declare `LensProvider` on app root.
 
 Here's a quick example to get you started, **it's literally all you need**:
 
@@ -29,8 +29,8 @@ Here's a quick example to get you started, **it's literally all you need**:
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { Button, LensProvider } from 'lens-ui';
-import 'node_modules/lens-ui/build/reset.css';
-import 'node_modules/lens-ui/build/index.css';
+import 'node_modules/lens-ui/dist/reset.css';
+import 'node_modules/lens-ui/dist/main.css';
 
 function App() {
   return (
@@ -41,4 +41,11 @@ function App() {
 }
 
 ReactDOM.render(<App />, document.querySelector('#app'));
+```
+### Responsive meta tag
+
+To ensure proper rendering and touch zooming for all devices, add the responsive viewport meta tag to your `<head>` element.
+
+```html
+<meta name="viewport" content="initial-scale=1, width=device-width" />
 ```

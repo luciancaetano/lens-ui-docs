@@ -1,11 +1,11 @@
-import { Badge, LensProvider, IntentEnum, Card, Layout } from 'lens-ui';
+import { Badge, LensProvider, Intents, Card, Layout } from 'lens-ui';
 
 Cards are used to display content in a way that is easily digestible and discoverable.
 
 ---
   <LensProvider>
     <Layout.Content layout="horizontal" style={{padding: "1rem", flexWrap: 'wrap', alignItems: 'center', justifyContent: 'center'}}>
-      {Object.keys(IntentEnum).map(((intent) => (
+      {Object.keys(Intents).map(((intent) => (
         <Card.Card style={{marginRight: '1rem', marginBottom: '1rem', maxWidth: '250px'}} intent={intent}>
           <Card.Body>
             <Card.Title>{intent.toUpperCase()}</Card.Title>
