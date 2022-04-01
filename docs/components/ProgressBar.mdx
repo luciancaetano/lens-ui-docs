@@ -1,13 +1,14 @@
 import { ProgressBar, LensProvider } from 'lens-ui';
+import BrowserOnly from '@docusaurus/BrowserOnly';
 
 Progress indicators express the length of a process.
 
 ---
-
-<LensProvider>
-  <ProgressBar progress={30} />
-</LensProvider>
-
+<BrowserOnly>
+  <LensProvider>
+    <ProgressBar progress={30} />
+  </LensProvider>
+</BrowserOnly>
 ---
 
 ### Properties

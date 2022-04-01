@@ -1,55 +1,56 @@
 import { MessageBox, LensProvider } from 'lens-ui';
+import BrowserOnly from '@docusaurus/BrowserOnly';
 
 MessageBox alert displays a short, important message in a way that attracts the user's attention without interrupting the user's task.
 
 ---
-
-<LensProvider>
- <MessageBox
-    intent="primary"
-    title="Title"
-    timeout={3000}
-  >
-    Hello world
-  </MessageBox>
+<BrowserOnly>
+  <LensProvider>
   <MessageBox
-    intent="primary"
-    title="Title"
-  >
-    Hello world
-  </MessageBox>
-  <MessageBox
-    intent="secondary"
-    title="Title"
-  >
-    Hello world
-  </MessageBox>
-  <MessageBox
-    intent="success"
-    title="Title"
-  >
-    Hello world
-  </MessageBox>
-  <MessageBox
-    intent="info"
-    title="Title"
-  >
-    Hello world
-  </MessageBox>
-  <MessageBox
-    intent="warning"
-    title="Title"
-  >
-    Hello world
-  </MessageBox>
-  <MessageBox
-    intent="danger"
-    title="Title"
-  >
-    Hello world
-  </MessageBox>
-</LensProvider>
-
+      intent="primary"
+      title="Title"
+      timeout={3000}
+    >
+      Hello world
+    </MessageBox>
+    <MessageBox
+      intent="primary"
+      title="Title"
+    >
+      Hello world
+    </MessageBox>
+    <MessageBox
+      intent="secondary"
+      title="Title"
+    >
+      Hello world
+    </MessageBox>
+    <MessageBox
+      intent="success"
+      title="Title"
+    >
+      Hello world
+    </MessageBox>
+    <MessageBox
+      intent="info"
+      title="Title"
+    >
+      Hello world
+    </MessageBox>
+    <MessageBox
+      intent="warning"
+      title="Title"
+    >
+      Hello world
+    </MessageBox>
+    <MessageBox
+      intent="danger"
+      title="Title"
+    >
+      Hello world
+    </MessageBox>
+  </LensProvider>
+</BrowserOnly>
 ---
 
 ### Properties

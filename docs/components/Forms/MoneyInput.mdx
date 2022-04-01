@@ -1,16 +1,17 @@
 import { Badge, MoneyInput } from 'lens-ui';
+import BrowserOnly from '@docusaurus/BrowserOnly';
 
 The MoneyInput is a wrapper around the native input element that allows you to mask the input value.
 
 ---
-
+<BrowserOnly>
 <LensProvider>
      <MoneyInput
       defaultValue={0}
       suffix="€"
     />
 </LensProvider>
-
+</BrowserOnly>
 ---
 
 ## Properties

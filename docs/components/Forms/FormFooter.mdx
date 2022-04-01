@@ -1,9 +1,10 @@
 import { FormFooter, LensProvider } from 'lens-ui';
+import BrowserOnly from '@docusaurus/BrowserOnly';
 
 FormFooter display's form actions like, save, cancel delete etc.
 
 ---
-
+<BrowserOnly>
 <LensProvider>
     <FormFooter
       state="ready"
@@ -12,7 +13,7 @@ FormFooter display's form actions like, save, cancel delete etc.
       onDelete={() => {}}
     />
 </LensProvider>
-
+</BrowserOnly>
 ---
 
 

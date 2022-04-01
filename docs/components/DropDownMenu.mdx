@@ -1,4 +1,5 @@
 import { DropDownMenu, LensProvider } from 'lens-ui';
+import BrowserOnly from '@docusaurus/BrowserOnly';
 
 DropDownMenu display a list of choices on temporary surfaces.
 
@@ -83,6 +84,7 @@ The divider object should have the property `divider` set to true and not have `
 ## Playground
 
 ```tsx live
+<BrowserOnly>
   <LensProvider>
     <div
       style={{
@@ -124,4 +126,5 @@ The divider object should have the property `divider` set to true and not have `
       </div>
     </div>
   </LensProvider>
+</BrowserOnly>
 ```

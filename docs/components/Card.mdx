@@ -1,8 +1,10 @@
 import { Badge, LensProvider, Intents, Card, Layout } from 'lens-ui';
+import BrowserOnly from '@docusaurus/BrowserOnly';
 
 Cards are used to display content in a way that is easily digestible and discoverable.
 
 ---
+<BrowserOnly>
   <LensProvider>
     <Layout.Content layout="horizontal" style={{padding: "1rem", flexWrap: 'wrap', alignItems: 'center', justifyContent: 'center'}}>
       {Object.keys(Intents).map(((intent) => (
@@ -24,7 +26,7 @@ Cards are used to display content in a way that is easily digestible and discove
       )))}
     </Layout.Content>
   </LensProvider>
-
+</BrowserOnly>
 ---
 
 

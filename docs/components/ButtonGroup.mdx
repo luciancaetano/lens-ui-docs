@@ -1,23 +1,24 @@
 import { ButtonGroup, LensProvider, Button } from 'lens-ui';
+import BrowserOnly from '@docusaurus/BrowserOnly';
 
 The ButtonGroup component can be used to group related buttons.
 
 ---
-
-<LensProvider>
-    <ButtonGroup>
-        <Button>
-            Button 1
-        </Button>
-        <Button>
-            Button 2
-        </Button>
-        <Button>
-            Button 3
-        </Button>
-    </ButtonGroup>
-</LensProvider>
-
+<BrowserOnly>
+    <LensProvider>
+        <ButtonGroup>
+            <Button>
+                Button 1
+            </Button>
+            <Button>
+                Button 2
+            </Button>
+            <Button>
+                Button 3
+            </Button>
+        </ButtonGroup>
+    </LensProvider>
+</BrowserOnly>
 ---
 
 ### Properties

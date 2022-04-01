@@ -1,4 +1,5 @@
 import { Layout, LensProvider } from 'lens-ui';
+import BrowserOnly from '@docusaurus/BrowserOnly';
 
 The Layout component's handles application layout.
 
@@ -27,40 +28,44 @@ The properties of Layout.AppLayout extends the `<aside>` element.
 ### Basic layout
 
 ```tsx
-<LensProvider>
-    <Layout.AppLayout>
-      <div>
-        App Header
-      </div>
-      <Layout.Content>
-        Hello world
-      </Layout.Content>
-      <div>
-        AppFooter
-      </div>
-    </Layout.AppLayout>
-</LensProvider>
+<BrowserOnly>
+  <LensProvider>
+      <Layout.AppLayout>
+        <div>
+          App Header
+        </div>
+        <Layout.Content>
+          Hello world
+        </Layout.Content>
+        <div>
+          AppFooter
+        </div>
+      </Layout.AppLayout>
+  </LensProvider>
+</BrowserOnly>
 ```
 
 ### Layout wit sidebar
 
 ```tsx
-<LensProvider>
-    <Layout.AppLayout>
-    <div>
-        App Header
-    </div>
-    <Layout.Content layout="horizontal">
-        <Layout.Sidebar>
-            Side content
-        </Layout.Sidebar>
-        <Layout.Content>
-            Hello world
-        </Layout.Content>
-    </Layout.Content>
-    <div>
-        AppFooter
-    </div>
-    </Layout.AppLayout>
-</LensProvider>
+<BrowserOnly>
+  <LensProvider>
+      <Layout.AppLayout>
+      <div>
+          App Header
+      </div>
+      <Layout.Content layout="horizontal">
+          <Layout.Sidebar>
+              Side content
+          </Layout.Sidebar>
+          <Layout.Content>
+              Hello world
+          </Layout.Content>
+      </Layout.Content>
+      <div>
+          AppFooter
+      </div>
+      </Layout.AppLayout>
+  </LensProvider>
+</BrowserOnly>
 ```

@@ -1,16 +1,17 @@
 import { Badge, MaskedInput } from 'lens-ui';
+import BrowserOnly from '@docusaurus/BrowserOnly';
 
 The MaskedInput is a wrapper around the native input element that allows you to mask the input value.
 
 ---
-
+<BrowserOnly>
 <LensProvider>
      <MaskedInput
       mask="99/99/9999"
       defaultValue="03/01/1990"
     />
 </LensProvider>
-
+</BrowserOnly>
 ---
 
 ## Properties
